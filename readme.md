@@ -1,11 +1,5 @@
 ## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
 
-### 📅 Deadline For 60 marks: 29th August, 2025 (11:59 pm ⏱️)
-
-### 📅 No Deadline For 50 marks
-
-### 📅 Deadline For 30 marks: Any time after 29th August.
-
 ---
 
 ## ✅ Main Requirements (50 Marks)
@@ -110,11 +104,30 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 
 ### 6. Answer the following questions clearly:
 
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+1. getElementById("id") = Selects one element by ID.
+
+getElementsByClassName("class") = Selects all elements with that class (html file).
+
+querySelector("cssSelector") = Selects the first matching element.
+
+querySelectorAll("cssSelector") = Selects all matching elements.
+
 2. How do you **create and insert a new element into the DOM**?
+ Ans:let div = document.createElement("div");  
+div.innerText = "Hello World ";  
+document.body.appendChild(div); 
+
 3. What is **Event Bubbling** and how does it work?
+Event goes from child to parent to root (bottom to top).
+Example: click on a button, event also goes to its parent div, then body.
+
 4. What is **Event Delegation** in JavaScript? Why is it useful?
+Instead of adding event on many child elements, we add one event on parent and use event.target to handle child clicks.
+Useful for better performance and dynamic elements.
+
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
+preventDefault() = Stops the default action .
+stopPropagation() = Stops the event from bubbling up to parents.
 
 ---
 
@@ -145,20 +158,6 @@ How to get current local time in js
 - HTML
 - CSS ( Vanilla , Tailwind CSS , DaisyUI , Others - wheatever you like )
 - JavaScript ( Vanilla only. No Framework / Library Allowed )
-
----
-
-## 📌 Rules
-
-- ✅ Minimum **5 meaningful commits** required
-- ❌ No Lorem Ipsum or dummy placeholder text. Use **relevant content only**
-
----
-
-## 🔗 What to Submit
-
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
 
 ---
 
