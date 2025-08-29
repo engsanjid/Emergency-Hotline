@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emargency-Service</title>
+    <title>Emergency-Service</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <nav class="py-[24px] px-[60px] ">
-        <div class="flex justify-between text-center ">
-            <div class="flex gap-1">
-                <img class="h-11" src="/assets/logo.png" alt="">
-                <h2>Emergency<br>Service</h2>
+    <nav class="py-6 px-4 md:px-16 lg:px-24">
+        <div class="flex flex-col md:flex-row justify-between items-center text-center gap-4">
+            <div class="flex items-center gap-2">
+                <img class="h-11" src="/assets/logo.png" alt="Emergency Service Logo">
+                <h2 class="text-xl font-bold">Emergency<br>Service</h2>
             </div>
-            <div class="flex gap-5">
-                <div class="bg-emerald-50 rounded-[50px] px-[36px] py-[12px]">
-                    <p class="flex gap-2 "><span id="heartCount">0</span>
-                    <img class="h-6" src="/assets/heart.png" alt=""></p>
+            <div class="flex gap-4 flex-wrap justify-center">
+                <div class="bg-emerald-50 rounded-[50px] px-6 py-3 flex items-center gap-2">
+                    <span id="heartCount" class="font-bold text-gray-800">0</span>
+                    <img class="h-6" src="/assets/heart.png" alt="Hearts">
                 </div>
-                <div class="bg-emerald-50 rounded-[50px] px-[36px] py-[12px]">
-                    <p class="flex gap-2"><span id="coinCount">100</span>
-                    <img class="h-6" src="/assets/coin.png" alt=""></p>
+                <div class="bg-emerald-50 rounded-[50px] px-6 py-3 flex items-center gap-2">
+                    <span id="coinCount" class="font-bold text-gray-800">100</span>
+                    <img class="h-6" src="/assets/coin.png" alt="Coins">
                 </div>
-                <div class="bg-green-600 rounded-[50px] px-[36px] py-[12px] text-white">
-                    <p><span id="copyCount">0</span> Copy</p>
+                <div class="bg-green-600 rounded-[50px] px-6 py-3 text-white flex items-center">
+                    <span id="copyCount">0</span> Copy
                 </div>
             </div>
         </div>
     </nav>
 
-    <section class="bg-[#013223] text-white flex flex-col justify-center items-center py-24 px-4">
-        <img src="/assets/logo.png" alt="" class="w-20 mb-4">
-        <h2>Emergency Service Directory</h2>
-        <p class="text-xs mt-2">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
+    <section class="h-[30vh] lg:h-[40vh] flex flex-col justify-center items-center text-center bg-gradient-to-r from-teal-900 to-green-900 text-white">
+        <img src="/assets/logo.png" alt="Emergency Service Logo" class="w-20 mb-4">
+        <h1 class="text-3xl font-bold mt-4">Emergency Service Directory</h1>
+        <p class="mt-2 text-sm">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
     </section>
-
-    <section class="m-[50px] flex gap-[30px]">
-        <div class="grid grid-cols-3 gap-[30px]">
+    
+    <section class="p-4 md:p-8 lg:p-12 flex flex-col lg:flex-row gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
             <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-start gap-4 border border-gray-200 service-card">
                 <div class="flex justify-between w-full">
                     <div class="flex items-center gap-2">
@@ -327,10 +327,10 @@
             </div>
         </div>
 
-        <div class="bg-white rounded-xl shadow-md p-6 mt-8">
+        <div class="bg-white rounded-xl shadow-md p-6 border border-gray-200 w-full lg:w-96 lg:h-fit">
             <div class="flex justify-between items-center mb-4">
                 <h2 class="text-xl font-semibold flex items-center gap-2 whitespace-nowrap">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10" fill="currentColor" viewBox="0 0 640 640">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 text-gray-500" fill="currentColor" viewBox="0 0 640 640">
                         <path d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z"/>
                     </svg>
                     <span>Call History</span>
