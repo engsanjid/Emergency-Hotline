@@ -76,7 +76,7 @@ serviceCards.forEach(card => {
         const serviceNumber = serviceNumberElement.innerText;
         addToHistory(serviceName, serviceNumber);
 
-        alert("Calling "+ serviceNumber);
+        alert("Calling "+serviceName+' ' + serviceNumber);
       } else {
         alert("Not enough coins!");
       }
