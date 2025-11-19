@@ -1,164 +1,154 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
+# Emergency Hotline UI
+
+> একটি ছোট Emergency Hotline UI / প্রজেক্ট। এই রেপোজিটরিতে একটি responsive ওয়েবপেজ আছে যেখানে জরুরি সার্ভিসগুলোর কার্ড দেখানো হয়, কল এবং কপি ফাংশনালিটি, কয়েন সিস্টেম এবং কল হিস্টোরি সংরক্ষণ করা আছে।
 
 ---
 
-## ✅ Main Requirements (50 Marks)
+## 🔗 লাইভ লিংক
 
-### 1. Navbar
+* **Live Demo:** *https://engsanjid.github.io/Emergency-Hotline/*
+* **রিপোজিটরি:** *https://github.com/engsanjid/Emergency-Hotline*
 
-- **Website name & logo** on the left as Figma
-- **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
-
----
-
-### 2. Hero Section
-
-- **Background Gradient** in the Whole Section
-- **A Relevant Logo** at the top-center
-- **Section Title** in the center
-- **A Relevant Slogan** in the bottom Center
 
 ---
 
-### 2. Main Section
+## 🧰 Technology Stack
 
-This Section will have layout as figma
-
-<table border=1 width="100%" cellpadding="50">
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
- </tr>
- <tr>
-    <td colspan=9 >Card Section</td>
-    <td colspan=3>History Section</td>
- </tr>
-</table>
-
-### Emergency Hotline Section
-
-- **Show Minimum 6 cards**. Each card will contain:
-  - Icon or Image
-  - Relevant Name
-  - Relevant Name in English
-  - Hotline number for calling
-  - Category Badge
-  - 💗 icon at left
-  - **2 buttons** at the bottom: Copy and Call with icons as Figma
-
-### History Section
-
-- **A white Background** in the whole section
-- **History Title with icon** at the top-left as Figma
-- **Clear History Button** at the top-right as Figma
+* **HTML5**
+* **CSS3** (Vanilla CSS / Tailwind CSS / DaisyUI — যে স্টাইল আপনি ব্যবহার করেছেন তা উল্লেখ করুন)
+* **JavaScript (Vanilla)** — কোনো ফ্রেমওয়ার্ক ব্যবহার করা হয়নি
 
 ---
 
-### 3. Responsiveness (5 Marks)
+## ✨ Main Features
 
-- Website should be fully **responsive for mobile devices** (implementation up to you)
-
----
-
-## Functionalities
-
-### 4. Heart Icons
-
-- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
-
----
-
-### 5. Call Buttons
-
-- On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
-  - Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - Add this service into the **Call History section** with:
-    - Service name
-    - Service number
+* Navbar: প্রজেক্ট লোগো, হার্ট কাউন্ট, কয়েন কাউন্ট (ডিফল্ট 100) ও কপি কাউন্ট দেখানো আছে।
+* Hero Section: পুরো সেকশন গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড, লোগো, টাইটেল এবং সলোগান।
+* Card Grid: বড় কার্ড সেকশন (colspan=9) এবং History সেকশন (colspan=3) — figma লেআউট বেস করে।
+* Emergency Hotline Card (কমপক্ষে 6টি): প্রতিটি কার্ডে আইকন/ইমেজ, নাম (বাংলা), নাম (English), ফোন নং, ক্যাটাগরি ব্যাজ, ডান কোণায় 💗 আইকন, এবং নিচে `Copy` ও `Call` বোতাম।
+* Call বাটন ক্লিক করলে: অ্যালার্ট দেখানো হবে (সেবা নাম এবং নম্বর সহ), কয়েন কাটা হবে (প্রতি কল 20 কয়েন), এবং কল ইতিহাসে সার্ভিস নাম ও নম্বর যোগ হবে সাথে কলের টাইমস্ট্যাম্প। কয়েন কম থাকলে উপযুক্ত অ্যালার্ট দেখানো হবে।
+* Copy বাটনে ক্লিক করলে: ফোন নম্বর ক্লিপবোর্ডে কপি হবে, কপি কাউন্ট বাড়বে এবং কপির জন্য একটি অ্যালার্ট দেখানো হবে।
+* History Section: সাদা ব্যাকগ্রাউন্ড, History Title (আইকন সহ) এবং Clear History বাটন (টপ-রাইট)। ক্লিয়ার করলে ইতিহাস খালি হবে।
+* Responsive: মোবাইল-ফ্রেন্ডলি লেআউট।
 
 ---
 
-### 5. Call History Section
+## 📸 Screenshot
 
-- Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-- A **Clear History button** on the right
-- Clicking this button will remove all data from call history
-
----
-
-## Create Readme
-
-You have to create a `Readme.md` file. and write down following questions. Dont Try to copy paste from AI Tools. Just write what you know about these. If you don't know , then search , learn , understand and then write.
-
-### 6. Answer the following questions clearly:
-
-1. getElementById("id") = Selects one element by ID.
-
-getElementsByClassName("class") = Selects all elements with that class (html file).
-
-querySelector("cssSelector") = Selects the first matching element.
-
-querySelectorAll("cssSelector") = Selects all matching elements.
-
-2. How do you **create and insert a new element into the DOM**?
- Ans:let div = document.createElement("div");  
-div.innerText = "Hello World ";  
-document.body.appendChild(div); 
-
-3. What is **Event Bubbling** and how does it work?
-Event goes from child to parent to root (bottom to top).
-Example: click on a button, event also goes to its parent div, then body.
-
-4. What is **Event Delegation** in JavaScript? Why is it useful?
-Instead of adding event on many child elements, we add one event on parent and use event.target to handle child clicks.
-Useful for better performance and dynamic elements.
-
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
-preventDefault() = Stops the default action .
-stopPropagation() = Stops the event from bubbling up to parents.
+<p align="center">
+  <img src="https://i.ibb.co/yc9sXvn8/screencapture-engsanjid-github-io-Emergency-Hotline-2025-11-19-12-55-34.png" alt="Screenshot" />
+</p>
 
 ---
 
-## 🧪 Challenges Part (10 Marks)
+## 🧩 Dependencies
 
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
+* (যদি Tailwind/DaisyUI ব্যবহার করে থাকেন) TailwindCSS, DaisyUI
+* অন্যথায়: কোনো external dependency নেই — সবকিছু Vanilla CSS + JS এ করা আছে।
 
-- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
+---
 
-💡Hint: You can ask for Help from `ChatGPT` Mamma . Just copy the below prompt , generate answer. use it with your own way.
+## 🛠️ How to run locally (Local Machine)
+
+1. রিপোজিটরি ক্লোন করুন:
 
 ```bash
-I have a card with some text and a button inside it. I want that when a user clicks the button, some specific text from the card is copied to the clipboard using JavaScript. Please provide the code and explain it step by step.
+git clone <your-repo-url>
+cd <your-repo-folder>
 ```
 
-- After clicking on the **Call button**, the **exact time of the call** will be shown in the Call History section (3 Marks)
+2. যদি আপনি সরাসরি HTML ফাইল খুলে দেখতে চান:
 
-💡Hint: Search Google with that below question
+* `index.html` ফাইল ব্রাউজারে খুলুন (double-click বা `Open with Live Server` ইত্যাদি)।
+
+3. যদি আপনি Live Server ব্যবহার করেন (VSCode):
+
+* `index.html` ওপেন করে **Live Server** চালান — লোকালি `http://127.0.0.1:5500` বা অনুরূপ URL এ ভিজিট করুন।
+
+4. Tailwind বা কোনো build step থাকলে (যদি ব্যবহার করে থাকেন):
 
 ```bash
-How to get current local time in js
+# Tailwind ব্যবহার করলে (উদাহরণ)
+npm install
+npm run dev
+# অথবা build কমান্ড চালান
 ```
 
 ---
 
-## ⚙️ Technology Stack
+## 🧪 Implementation Notes (Important JS snippets)
 
-- HTML
-- CSS ( Vanilla , Tailwind CSS , DaisyUI , Others - wheatever you like )
-- JavaScript ( Vanilla only. No Framework / Library Allowed )
+### 1) Call button logic (coins, alert, history)
+
+```javascript
+// ধরে নিচ্ছি global state:
+let coins = 100;
+const COST_PER_CALL = 20;
+
+function handleCall(serviceName, phoneNumber) {
+  if (coins < COST_PER_CALL) {
+    alert('কয়েন পর্যাপ্ত নেই। কল করার জন্য কমপক্ষে ' + COST_PER_CALL + ' কয়েন প্রয়োজন।');
+    return;
+  }
+
+  coins -= COST_PER_CALL;
+  updateNavbarCoins(coins);
+
+  // দেখান অ্যালার্ট
+  alert(`Calling ${serviceName} at ${phoneNumber}`);
+
+  // সময় (লোকাল)
+  const now = new Date();
+  const timeString = now.toLocaleString(); // locale অনুযায়ী লোকাল সময়
+
+  // ইতিহাসে যোগ করুন
+  addToHistory({ name: serviceName, number: phoneNumber, time: timeString });
+}
+```
+
+### 2) Copy to clipboard & increase copy count
+
+```javascript
+let copyCount = 0;
+
+function handleCopy(textToCopy) {
+  navigator.clipboard.writeText(textToCopy).then(() => {
+    copyCount += 1;
+    updateNavbarCopyCount(copyCount);
+    alert('Number copied to clipboard');
+  }).catch(err => {
+    alert('Copy failed: ' + err);
+  });
+}
+```
+
+### 3) Heart icon logic (increase heart count in navbar)
+
+```javascript
+let heartCount = 0;
+function toggleHeart(cardId) {
+  heartCount += 1;
+  updateNavbarHearts(heartCount);
+}
+```
+
+### 4) Get current local time in JS
+
+```javascript
+const now = new Date();
+// human-readable local time
+now.toLocaleString();
+// or for formatted time only
+now.toLocaleTimeString();
+```
 
 ---
 
-# Let's Code and Achieve your Dream 🎯
+
+
+---
+
+## Author
+
+Name: Md Sanjid Islam
+Email: mdsanjidi36@gmail.com
